@@ -29,7 +29,7 @@ import com.sanyam.uiPackage.RegisterUser;
 
 public class TestDemo {
 	// method
-	// Class
+	// Class 
 	// test
 	// Suite
 	public WebDriver driver = null;
