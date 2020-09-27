@@ -30,7 +30,7 @@ import com.sanyam.uiPackage.RegisterUser;
 public class TestDemo {
 	// method
 	// Class 
-	// test
+	// test 
 	// Suite
 	public WebDriver driver = null;
 	public HashMap<String, String> datamap;
