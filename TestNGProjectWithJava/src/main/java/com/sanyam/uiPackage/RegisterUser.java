@@ -10,7 +10,7 @@ public class RegisterUser {
 	WebDriver driver;
 	public RegisterUser(WebDriver driver){
 		this.driver = driver;
-		//PageFactory.initElements(driver, RegisterUser.class);
+		//PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(how=How.LINK_TEXT , using="Sign in")

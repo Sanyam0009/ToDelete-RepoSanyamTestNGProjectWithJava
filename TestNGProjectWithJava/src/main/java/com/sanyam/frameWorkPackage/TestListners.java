@@ -45,14 +45,14 @@ public class TestListners implements ITestListener {
 	}
 
 	// Customize Pass Report Function
-	public static void customOnPassFailure(WebDriver driver, String expectedMsg, String ActualMsg, String scName) {
+	public static void customOnTestSuccess(WebDriver driver, String expectedMsg, String ActualMsg, String scName) {
 		String logText = "<b>" + "Expected - " + expectedMsg + "<br>" + "Actual - " + ActualMsg + "</b>";
 		Markup markupLogText = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
 		extentTest.get().log(Status.PASS, markupLogText);
 		if (scName != "") {
 			String path1 = ExtentManager.getScreenshot(driver, scName);
 			try {
-				extentTest.get().fail("<b><font color=red> ScreenShot of above Failure </font></b>",
+				extentTest.get().pass("<b><font color=red> ScreenShot of above Failure </font></b>",
 						MediaEntityBuilder.createScreenCaptureFromPath(path1).build());
 			} catch (Exception e) {
 				extentTest.get().fail("Tets Failed , Can not attach screenshot");

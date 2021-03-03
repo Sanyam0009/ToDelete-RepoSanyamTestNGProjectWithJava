@@ -15,7 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadExcelFile {
 static HSSFWorkbook workbook;
 static HSSFSheet worksheet;
-static HSSFRow rowNumber;
+static HSSFRow rowObj;
 
 
 	public static HashMap<String,String> testDataCollector(String TestdataIdentifier) throws IOException{
@@ -27,9 +27,9 @@ static HSSFRow rowNumber;
 			FileInputStream fis = new FileInputStream(src);
 			workbook = new HSSFWorkbook(fis);
 			worksheet = workbook.getSheet("Sheet1");
-			rowNumber = worksheet.getRow(0);
+			rowObj = worksheet.getRow(0);
 			int lastRowNumber = worksheet.getLastRowNum();
-			int lastColumnNumber = rowNumber.getLastCellNum();
+			int lastColumnNumber = rowObj.getLastCellNum();
 			int testCaseRow = 0; 
 			testData = new HashMap<String, String>();
 			for(int i=1;i<=lastRowNumber;i++){
