@@ -1,16 +1,7 @@
-package com.sanyam.frameWorkPackage;
+package com.sanyam.frameworkpackage;
 
-import java.io.File;
-import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Date;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.IResultMap;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -22,10 +13,10 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.sanyam.SeleniumProject.TestDemo;
 
-public class TestListners implements ITestListener {
-	public WebDriver driver = null;
+
+public class TestListners extends BrowserFactory implements ITestListener {
+	
 	private static ExtentReports extents = ExtentManager.createInstance();
 	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
@@ -86,7 +77,7 @@ public class TestListners implements ITestListener {
 		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
 		extentTest.get().fail("<details><summary><b><font color=red> Excetion occered, Click to see details"
 				+ "</font></b></summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details> \n");
-		WebDriver driver = ((TestDemo) result.getInstance()).driver;
+		//WebDriver driver = ((TestDemo) result.getInstance()).driver;
 		String path = ExtentManager.getScreenshot(driver, methodName);
 		String description = result.getThrowable().getMessage();
 		String logText = "<b> Test Method  - " + methodName + " --- " + description + " - Failed</b>";

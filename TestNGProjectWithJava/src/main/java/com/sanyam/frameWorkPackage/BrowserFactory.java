@@ -1,4 +1,4 @@
-package com.sanyam.frameWorkPackage;
+package com.sanyam.frameworkpackage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +12,7 @@ public class BrowserFactory {
 		public static WebDriver getDriver(String browserName){
 		if (browserName.equalsIgnoreCase("chrome")){
 			System.out.println("Opening Chrome Browser");
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS); 

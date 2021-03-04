@@ -1,4 +1,4 @@
-package com.sanyam.uiPackage;
+package com.sanyam.uipackage;
 
 public class NumberCheck {
 

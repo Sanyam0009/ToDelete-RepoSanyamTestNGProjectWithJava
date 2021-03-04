@@ -1,43 +1,34 @@
-package com.sanyam.SeleniumProject;
-
-import static org.testng.Assert.fail;
+package com.sanyam.testproject;
 
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.apache.poi.util.SystemOutLogger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.Reporter;
 import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.Status;
-import com.sanyam.frameWorkPackage.BrowserFactory;
-import com.sanyam.frameWorkPackage.ExtentManager;
-import com.sanyam.frameWorkPackage.ReadExcelFile;
-import com.sanyam.frameWorkPackage.TestListners;
-import com.sanyam.uiPackage.LoginPage;
-import com.sanyam.uiPackage.RegisterUser;
+import com.sanyam.frameworkpackage.BrowserFactory;
+import com.sanyam.frameworkpackage.ExtentManager;
+import com.sanyam.frameworkpackage.ReadExcelFile;
+import com.sanyam.frameworkpackage.TestListners;
+import com.sanyam.uipackage.LoginPage;
+import com.sanyam.uipackage.RegisterUser;
 
-public class TestDemo {
+public class TestDemo extends BrowserFactory {
 	// method
 	// Class 
 	// test 
 	// Suite
-	public WebDriver driver = null;
+	//public WebDriver driver = null;
 	public HashMap<String, String> datamap;
 
 	@BeforeTest
 	public void openBrowserUrl() {
-		this.driver = BrowserFactory.getDriver("firefox");
+		BrowserFactory.getDriver("chrome");
 
 	}
 
