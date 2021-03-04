@@ -9,7 +9,6 @@
       <class name="com.sanyam.testproject.TestDemo">
         <methods>
           <include name="openBrowserUrl"/>
-          <include name="loginMercury"/>
           <include name="initAll"/>
           <include name="aftertest"/>
           <include name="testSkip"/>

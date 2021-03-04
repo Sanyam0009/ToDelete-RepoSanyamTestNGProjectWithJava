@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="72.26" tests="4" errors="0" skipped="1" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="56.109" tests="4" errors="0" skipped="1" failures="1">
   <properties>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -31,23 +31,23 @@
     <property name="GOOGLE_API_KEY" value="no"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="LOCALAPPDATA" value="C:\Users\$akshi\AppData\Local"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/18/display/redirect?page=changes"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/21/display/redirect?page=changes"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="user.script" value=""/>
     <property name="path.separator" value=";"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="BUILD_TAG" value="jenkins-SeleniumPractice-18"/>
+    <property name="BUILD_TAG" value="jenkins-SeleniumPractice-21"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Java_Selenium_Items\apache-maven-3.6.3 C:\Users\$akshi\.jenkins\war\WEB-INF\lib\remoting-4.7.jar C:\Users\$akshi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\$akshi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 62358"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Java_Selenium_Items\apache-maven-3.6.3 C:\Users\$akshi\.jenkins\war\WEB-INF\lib\remoting-4.7.jar C:\Users\$akshi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\$akshi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 64236"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="JENKINS_SERVER_COOKIE" value="43af1e8e3e169e2f"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="Path" value="C:\Program Files\Java\jdk1.8.0_181/bin;C:\Java_Selenium_Items\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\$akshi\AppData\Local\Microsoft\WindowsApps;"/>
     <property name="java.io.tmpdir" value="C:\Users\$akshi\AppData\Local\Temp\"/>
     <property name="APPDATA" value="C:\Users\$akshi\AppData\Roaming"/>
     <property name="user.language" value="en"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/SeleniumPractice/18/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/SeleniumPractice/21/"/>
     <property name="M2_HOME" value="C:\Java_Selenium_Items\apache-maven-3.6.3"/>
     <property name="=C:" value="C:\Java_Selenium_Items"/>
     <property name="java.vm.info" value="mixed mode"/>
@@ -55,7 +55,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="localRepository" value="C:\Users\$akshi\.m2\repository"/>
-    <property name="BUILD_DISPLAY_NAME" value="#18"/>
+    <property name="BUILD_DISPLAY_NAME" value="#21"/>
     <property name="OS" value="Windows_NT"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="HUDSON_SERVER_COOKIE" value="43af1e8e3e169e2f"/>
@@ -70,7 +70,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="18"/>
+    <property name="BUILD_NUMBER" value="21"/>
     <property name="maven3.interceptor" value="C:\Users\$akshi\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Java_Selenium_Items\apache-maven-3.6.3/bin;C:\Program Files\Java\jdk1.8.0_181/bin;C:\Program Files\Java\jdk1.8.0_181/bin;C:\Java_Selenium_Items\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\$akshi\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="HOMEDRIVE" value="C:"/>
@@ -80,9 +80,9 @@
     <property name="java.class.version" value="52.0"/>
     <property name="JOB_URL" value="http://localhost:8080/job/SeleniumPractice/"/>
     <property name="OneDrive" value="C:\Users\$akshi\OneDrive"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/18/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/21/display/redirect"/>
     <property name="JENKINS_HOME" value="C:\Users\$akshi\.jenkins"/>
-    <property name="BUILD_ID" value="18"/>
+    <property name="BUILD_ID" value="21"/>
     <property name="TEMP" value="C:\Users\$akshi\AppData\Local\Temp"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -94,7 +94,7 @@
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
     <property name="PATH+MAVEN" value="C:\Java_Selenium_Items\apache-maven-3.6.3/bin"/>
     <property name="USERDOMAIN_ROAMINGPROFILE" value="sakshi"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/18/display/redirect?page=artifacts"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/21/display/redirect?page=artifacts"/>
     <property name="PROMPT" value="$P$G"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_181"/>
@@ -125,7 +125,7 @@
     <property name="OneDriveConsumer" value="C:\Users\$akshi\OneDrive"/>
     <property name="WORKSPACE" value="C:\Users\$akshi\.jenkins\workspace\SeleniumPractice"/>
     <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/18/display/redirect?page=tests"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/job/SeleniumPractice/21/display/redirect?page=tests"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="SystemRoot" value="C:\WINDOWS"/>
     <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
@@ -146,41 +146,11 @@
     <property name="POM_DISPLAYNAME" value="SeleniumProject"/>
     <property name="sun.arch.data.model" value="64"/>
   </properties>
-  <testcase name="loginMercury" classname="com.sanyam.testproject.TestDemo" time="8.807">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email_create&apos;]&quot;}&#10;  (Session info: chrome=88.0.4324.190)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SAKSHI&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e85b25918d81088b887a02344c2881f0&#10;*** Element info: {Using=name, value=email_create}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email_create']"}
-  (Session info: chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SAKSHI', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e85b25918d81088b887a02344c2881f0
-*** Element info: {Using=name, value=email_create}
-	at com.sanyam.testproject.TestDemo.loginMercury(TestDemo.java:54)
-</failure>
-    <system-out><![CDATA[In READEXCELFILE
-Test_Identifiers-TC_01
-Email_Id-123@gmail.com
-UserName-scsanyam52@gmail.com
-Password-SanyamC
-Value1-Testing1
-Value2-TestingV2
-Opening Chrome Browser
-Excel datascsanyam52@gmail.com SanyamC 123@gmail.com
-Register and Login
-In register Method of RegisterUser class
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 14659
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-]]></system-err>
-  </testcase>
-  <testcase name="testCase2" classname="com.sanyam.testproject.TestDemo" time="1.154">
-    <failure message="The following asserts failed:&#10;	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_00_26_55_IST_2021.png,&#10;	Test Fail 3" type="java.lang.AssertionError">java.lang.AssertionError: 
+  <testcase name="loginMercury" classname="com.sanyam.testproject.TestDemo" time="11.51"/>
+  <testcase name="testCase2" classname="com.sanyam.testproject.TestDemo" time="1.842">
+    <failure message="The following asserts failed:&#10;	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_25_45_IST_2021.png,&#10;	Test Fail 3" type="java.lang.AssertionError">java.lang.AssertionError: 
 The following asserts failed:
-	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_00_26_55_IST_2021.png,
+	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_25_45_IST_2021.png,
 	Test Fail 3
 	at com.sanyam.testproject.TestDemo.testCase2(TestDemo.java:73)
 </failure>
@@ -192,5 +162,5 @@ The following asserts failed:
     <system-out><![CDATA[Inside Skip Report
 ]]></system-out>
   </testcase>
-  <testcase name="testSuccess" classname="com.sanyam.testproject.TestDemo" time="0"/>
+  <testcase name="testSuccess" classname="com.sanyam.testproject.TestDemo" time="0.001"/>
 </testsuite>
