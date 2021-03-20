@@ -2,33 +2,33 @@
 <testng-results skipped="1" failed="1" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="68405" started-at="2021-03-04T20:21:09Z" finished-at="2021-03-04T20:22:17Z">
+  <suite name="Suite" duration-ms="29447" started-at="2021-03-20T21:37:28Z" finished-at="2021-03-20T21:37:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="68405" started-at="2021-03-04T20:21:09Z" finished-at="2021-03-04T20:22:17Z">
+    <test name="Test" duration-ms="29447" started-at="2021-03-20T21:37:28Z" finished-at="2021-03-20T21:37:57Z">
       <class name="com.sanyam.testproject.TestDemo">
-        <test-method status="PASS" signature="initAll()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="initAll" is-config="true" duration-ms="3761" started-at="2021-03-04T20:21:09Z" finished-at="2021-03-04T20:21:13Z">
+        <test-method status="PASS" signature="initAll()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="initAll" is-config="true" duration-ms="411" started-at="2021-03-20T21:37:28Z" finished-at="2021-03-20T21:37:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initAll -->
-        <test-method status="PASS" signature="openBrowserUrl()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="openBrowserUrl" is-config="true" duration-ms="47134" started-at="2021-03-04T20:21:13Z" finished-at="2021-03-04T20:22:00Z">
+        <test-method status="PASS" signature="openBrowserUrl()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="openBrowserUrl" is-config="true" duration-ms="22012" started-at="2021-03-20T21:37:28Z" finished-at="2021-03-20T21:37:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserUrl -->
-        <test-method status="PASS" signature="loginMercury()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="loginMercury" duration-ms="13746" started-at="2021-03-04T20:22:01Z" finished-at="2021-03-04T20:22:14Z">
+        <test-method status="PASS" signature="LoginFreeCRM()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="LoginFreeCRM" duration-ms="742" started-at="2021-03-20T21:37:50Z" finished-at="2021-03-20T21:37:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginMercury -->
-        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="testCase2" duration-ms="2026" started-at="2021-03-04T20:22:15Z" finished-at="2021-03-04T20:22:17Z">
+        </test-method> <!-- LoginFreeCRM -->
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="testCase2" duration-ms="5424" started-at="2021-03-20T21:37:51Z" finished-at="2021-03-20T21:37:57Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_52_16_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Sun_Mar_21_03_07_56_IST_2021.png,
 Test Fail 3]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_52_16_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Sun_Mar_21_03_07_56_IST_2021.png,
 Test Fail 3
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
 at com.sanyam.testproject.TestDemo.testCase2(TestDemo.java:73)
@@ -63,7 +63,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="testSkip" duration-ms="4" started-at="2021-03-04T20:22:17Z" finished-at="2021-03-04T20:22:17Z">
+        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="testSkip" duration-ms="3" started-at="2021-03-20T21:37:57Z" finished-at="2021-03-20T21:37:57Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Testig Skip test]]>
@@ -102,11 +102,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSkip -->
-        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="testSuccess" duration-ms="5" started-at="2021-03-04T20:22:17Z" finished-at="2021-03-04T20:22:17Z">
+        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="testSuccess" duration-ms="2" started-at="2021-03-20T21:37:57Z" finished-at="2021-03-20T21:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccess -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="aftertest" is-config="true" duration-ms="0" started-at="2021-03-04T20:22:17Z" finished-at="2021-03-04T20:22:17Z">
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.sanyam.testproject.TestDemo@306279ee]" name="aftertest" is-config="true" duration-ms="0" started-at="2021-03-20T21:37:57Z" finished-at="2021-03-20T21:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->

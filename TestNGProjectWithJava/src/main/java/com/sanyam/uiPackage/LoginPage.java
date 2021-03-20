@@ -13,32 +13,23 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 		System.out.println("In Login class const After PF");
 	}
-	@FindBy(how=How.LINK_TEXT , using="Sign in")
-	@CacheLookup
-	WebElement SignIN;
+
 	
-	@FindBy(how=How.ID , using="email")
+	@FindBy(how=How.XPATH, using="//input[@name='email']")
 	@CacheLookup
 	WebElement userName;
 	
-	@FindBy(how=How.ID , using="passwd")
+	@FindBy(xpath="//input[@name='password']")
 	@CacheLookup
 	WebElement password;
 	
-	@FindBy(how=How.ID , using="SubmitLogin")
+	@FindBy(how=How.XPATH , using="//div[text()='Login']")
 	@CacheLookup
 	WebElement login;
 	
 	
 	public void login(String uname,String Password){
 	System.out.println("In Login Method of LoginPage class");
-	if (SignIN !=null){
-		SignIN.click();
-	}
-	else
-	{
-		//code to report error.
-	}
 	userName.sendKeys(uname);
 	password.sendKeys(Password);
 	login.click();

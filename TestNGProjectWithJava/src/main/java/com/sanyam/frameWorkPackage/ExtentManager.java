@@ -13,14 +13,14 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentManager {
-	private static ExtentReports extent;
+	private static ExtentReports extentReports;
 	
 
 	public static ExtentReports createInstance(){
 	//	String dateRepott = new SimpleDateFormat("yyyyddmmhhmmss").format(new Date());
 		Date d = new Date();
 		String fileName = "extentReport_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
-		String directory = System.getProperty("user.dir") + "\\Reports\\";
+		String directory = System.getProperty("user.dir") + "/Reports/";
 		new File(directory).mkdir();
 		String reportDirectory = directory + fileName;
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(reportDirectory);
@@ -28,11 +28,11 @@ public class ExtentManager {
 		htmlReporter.config().setReportName("Sanyam Automation Report");
 		htmlReporter.config().setTheme(Theme.STANDARD);
 
-		extent = new ExtentReports();
-		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Organization", "Sanyam's Office");
-		extent.setSystemInfo("Browser", "Chrome");
-		return extent;
+		extentReports = new ExtentReports();
+		extentReports.attachReporter(htmlReporter);
+		extentReports.setSystemInfo("Organization", "Sanyam's Office");
+		extentReports.setSystemInfo("Browser", "Chrome");
+		return extentReports;
 		
 	}
 	

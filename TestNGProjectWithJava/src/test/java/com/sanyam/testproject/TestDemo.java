@@ -27,7 +27,7 @@ public class TestDemo extends BrowserFactory {
 	public HashMap<String, String> datamap;
 
 	@BeforeTest
-	public void openBrowserUrl() {
+	public void openBrowserUrl() throws IOException {
 		BrowserFactory.getDriver("chrome");
 
 	}
@@ -41,17 +41,17 @@ public class TestDemo extends BrowserFactory {
 	}
 
 	@Test
-	public void loginMercury() {
+	public void LoginFreeCRM() {
 		String email_Id = datamap.get("Email_Id");
 		String uname = datamap.get("UserName");
 		String Pwd = datamap.get("Password");
 
 		System.out.println("Excel data" + uname + " " + Pwd + " " + email_Id);
 		System.out.println("Register and Login");
-		RegisterUser RegisterUserObj = PageFactory.initElements(driver, RegisterUser.class);
+		//RegisterUser RegisterUserObj = PageFactory.initElements(driver, RegisterUser.class);
 		// RegisterUser RegisterUserObj = new RegisterUser(driver); // In this
-		// case we will have to keep PageFactory.initElement in constructor
-		LoginPage LoginPageObject = RegisterUserObj.register(email_Id);
+		// case we will have to keep PageFactory.initElement(driver, this); in constructor
+		LoginPage LoginPageObject = new LoginPage(driver);
 		LoginPageObject.login(uname, Pwd);
 	}
 
