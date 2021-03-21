@@ -42,7 +42,7 @@ public class TestListners extends BrowserFactory implements ITestListener {
 		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
 		extentTestTL.get().fail("<details><summary><b><font color=red> Excetion occered, Click to see details"
 				+ "</font></b></summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details> \n");
-		//WebDriver driver = ((TestDemo) result.getInstance()).driver;
+		//WebDriver driver = ((LoginPageTest) result.getInstance()).driver;
 		String path = ExtentManager.getScreenshot(driver, methodName);
 		String description = result.getThrowable().getMessage();
 		String logText = "<b> Test Method  - " + methodName + " --- " + description + " - Failed</b>";

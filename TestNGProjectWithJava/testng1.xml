@@ -6,7 +6,8 @@
 	</listeners>
   <test name="Test">
     <classes>
-      <class name="com.sanyam.testproject.TestDemo"/>
+      <class name="com.sanyam.testproject.LoginPageTest"/>
+      <class name="com.sanyam.testproject.HomePageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

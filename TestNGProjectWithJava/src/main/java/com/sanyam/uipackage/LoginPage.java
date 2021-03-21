@@ -7,8 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-	public LoginPage(WebDriver driver){
+import com.sanyam.frameworkpackage.BrowserFactory;
+import com.sanyam.testproject.HomePageTest;
+
+public class LoginPage extends BrowserFactory{
+	public LoginPage(){
 		System.out.println("In Login class const before PF");
 		PageFactory.initElements(driver, this);
 		System.out.println("In Login class const After PF");
@@ -28,12 +31,12 @@ public class LoginPage {
 	WebElement login;
 	
 	
-	public void login(String uname,String Password){
-	System.out.println("In Login Method of LoginPage class");
-	userName.sendKeys(uname);
-	password.sendKeys(Password);
-	login.click();
-	
+	public HomePage login(String uname,String Password){
+		System.out.println("In Login Method of LoginPage class");
+		userName.sendKeys(uname);
+		password.sendKeys(Password);
+		login.click();
+		return new HomePage();
 	}
 	
 }

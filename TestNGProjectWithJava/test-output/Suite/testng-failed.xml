@@ -6,15 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.sanyam.testproject.TestDemo">
+      <class name="com.sanyam.testproject.LoginPageTest">
         <methods>
-          <include name="openBrowserUrl"/>
-          <include name="initAll"/>
-          <include name="aftertest"/>
           <include name="testSkip"/>
+          <include name="setUp"/>
           <include name="testCase2"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.sanyam.testproject.TestDemo -->
+      </class> <!-- com.sanyam.testproject.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

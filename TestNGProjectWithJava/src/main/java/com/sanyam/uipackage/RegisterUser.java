@@ -30,7 +30,7 @@ public class RegisterUser {
 		SignIN.click();
 		email.sendKeys(emailId);
 		CreatAccount.click();
-		return new LoginPage(driver); //Login page is lending page
+		return new LoginPage(); //Login page is lending page
 	}
 	
 

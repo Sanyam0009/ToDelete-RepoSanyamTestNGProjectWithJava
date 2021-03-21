@@ -6,7 +6,9 @@ import java.util.HashMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.SkipException;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -18,26 +20,16 @@ import com.sanyam.frameworkpackage.TestListners;
 import com.sanyam.uipackage.LoginPage;
 import com.sanyam.uipackage.RegisterUser;
 
-public class TestDemo extends BrowserFactory {
-	// method
-	// Class 
-	// test 
-	// Suite
-	//public WebDriver driver = null;
+public class LoginPageTest extends BrowserFactory {
+	// method>> Class >> test >> Suite
 	public HashMap<String, String> datamap;
-
-	@BeforeTest
-	public void openBrowserUrl() throws IOException {
-		BrowserFactory.getDriver("chrome");
-
-	}
-
-	@BeforeTest
-	public void initAll() throws IOException {
+	@BeforeClass
+	public void setUp() throws IOException {
 		// ReadExcelFile excelFactory = new ReadExcelFile(); // made the method
 		// "testDataCollector" static so no need to create an obj as can be
 		// accessed by class name
-		datamap = ReadExcelFile.testDataCollector("TC_01");
+		getDriver();
+		datamap =  ReadExcelFile.testDataCollector("TC_01");
 	}
 
 	@Test
@@ -48,10 +40,11 @@ public class TestDemo extends BrowserFactory {
 
 		System.out.println("Excel data" + uname + " " + Pwd + " " + email_Id);
 		System.out.println("Register and Login");
-		//RegisterUser RegisterUserObj = PageFactory.initElements(driver, RegisterUser.class);
+		//RegisterUser RegisterUserObj = PageFactory.initElements(driver, RegisterUser.class//(POM class name));
+		//or
 		// RegisterUser RegisterUserObj = new RegisterUser(driver); // In this
 		// case we will have to keep PageFactory.initElement(driver, this); in constructor
-		LoginPage LoginPageObject = new LoginPage(driver);
+		LoginPage LoginPageObject = new LoginPage();
 		LoginPageObject.login(uname, Pwd);
 	}
 
@@ -91,10 +84,10 @@ public class TestDemo extends BrowserFactory {
 		throw new SkipException("Testig Skip test");
 	}
 
-	@AfterTest
-	public void aftertest() {
+	@AfterClass
+	public void teardown() {
 		System.out.println("Closing Browser");
-		// driver.close();
+		driver.quit();
 	}
 
 }

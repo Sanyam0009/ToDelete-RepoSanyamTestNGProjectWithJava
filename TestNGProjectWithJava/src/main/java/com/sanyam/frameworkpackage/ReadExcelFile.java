@@ -14,7 +14,7 @@ static HSSFSheet worksheet;
 static HSSFRow rowObj;
 
 
-	public static HashMap<String,String> testDataCollector(String TestdataIdentifier) throws IOException{
+	public static HashMap<String,String> testDataCollector(String TestdataIdentifier){
 		HashMap<String, String> testData = null;
 		try {
 			System.out.println("In READEXCELFILE");
@@ -47,7 +47,12 @@ static HSSFRow rowObj;
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		workbook.close();
+		try {
+			workbook.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return testData;
 		
 		
