@@ -31,12 +31,16 @@ public class HomePageTest extends BrowserFactory {
 	@Test
 	public void veriftLoggedInUSerTest() {
 		homePage.userLoggedIn();
-
+	}
+	
+	@Test
+	public void contactsButtonTest(){
+		homePage.clickOnContactsButton();
 	}
 
 	@AfterClass
 	public void teardown() {
 		System.out.println("Closing Browser");
-		driver.quit();
+		//driver.quit();
 	}
 }

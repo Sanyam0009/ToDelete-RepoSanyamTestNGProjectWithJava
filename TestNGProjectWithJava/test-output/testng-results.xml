@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
+<testng-results skipped="1" failed="1" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27409" started-at="2021-03-21T12:52:24Z" finished-at="2021-03-21T12:52:52Z">
+  <suite name="Suite" duration-ms="27912" started-at="2021-03-21T19:31:43Z" finished-at="2021-03-21T19:32:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27409" started-at="2021-03-21T12:52:24Z" finished-at="2021-03-21T12:52:52Z">
+    <test name="Test" duration-ms="27912" started-at="2021-03-21T19:31:43Z" finished-at="2021-03-21T19:32:11Z">
       <class name="com.sanyam.testproject.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="setUp" is-config="true" duration-ms="9382" started-at="2021-03-21T12:52:24Z" finished-at="2021-03-21T12:52:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="setUp" is-config="true" duration-ms="11433" started-at="2021-03-21T19:31:43Z" finished-at="2021-03-21T19:31:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginFreeCRM()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="LoginFreeCRM" duration-ms="693" started-at="2021-03-21T12:52:34Z" finished-at="2021-03-21T12:52:34Z">
+        <test-method status="PASS" signature="LoginFreeCRM()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="LoginFreeCRM" duration-ms="636" started-at="2021-03-21T19:31:55Z" finished-at="2021-03-21T19:31:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFreeCRM -->
-        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testCase2" duration-ms="1045" started-at="2021-03-21T12:52:34Z" finished-at="2021-03-21T12:52:36Z">
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testCase2" duration-ms="1052" started-at="2021-03-21T19:31:55Z" finished-at="2021-03-21T19:31:56Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Sun_Mar_21_18_22_35_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Mon_Mar_22_01_01_56_IST_2021.png,
 Test Fail 3]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Sun_Mar_21_18_22_35_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Mon_Mar_22_01_01_56_IST_2021.png,
 Test Fail 3
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
 at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:66)
@@ -59,7 +59,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSkip" duration-ms="2" started-at="2021-03-21T12:52:37Z" finished-at="2021-03-21T12:52:37Z">
+        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSkip" duration-ms="2" started-at="2021-03-21T19:31:57Z" finished-at="2021-03-21T19:31:57Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Testig Skip test]]>
@@ -98,25 +98,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSkip -->
-        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSuccess" duration-ms="2" started-at="2021-03-21T12:52:37Z" finished-at="2021-03-21T12:52:37Z">
+        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSuccess" duration-ms="2" started-at="2021-03-21T19:31:57Z" finished-at="2021-03-21T19:31:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccess -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="teardown" is-config="true" duration-ms="898" started-at="2021-03-21T12:52:37Z" finished-at="2021-03-21T12:52:37Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="teardown" is-config="true" duration-ms="1810" started-at="2021-03-21T19:31:57Z" finished-at="2021-03-21T19:31:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.sanyam.testproject.LoginPageTest -->
       <class name="com.sanyam.testproject.HomePageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="Setup" is-config="true" duration-ms="12237" started-at="2021-03-21T12:52:37Z" finished-at="2021-03-21T12:52:50Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="Setup" is-config="true" duration-ms="10778" started-at="2021-03-21T19:31:59Z" finished-at="2021-03-21T19:32:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="veriftLoggedInUSerTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="veriftLoggedInUSerTest" duration-ms="1119" started-at="2021-03-21T12:52:50Z" finished-at="2021-03-21T12:52:51Z">
+        <test-method status="PASS" signature="contactsButtonTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="contactsButtonTest" duration-ms="1284" started-at="2021-03-21T19:32:10Z" finished-at="2021-03-21T19:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactsButtonTest -->
+        <test-method status="PASS" signature="veriftLoggedInUSerTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="veriftLoggedInUSerTest" duration-ms="82" started-at="2021-03-21T19:32:11Z" finished-at="2021-03-21T19:32:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- veriftLoggedInUSerTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="teardown" is-config="true" duration-ms="964" started-at="2021-03-21T12:52:51Z" finished-at="2021-03-21T12:52:52Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="teardown" is-config="true" duration-ms="1" started-at="2021-03-21T19:32:11Z" finished-at="2021-03-21T19:32:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
