@@ -32,7 +32,7 @@ public class LoginPageTest extends BrowserFactory {
 		datamap =  ReadExcelFile.testDataCollector("TC_01");
 	}
 
-	@Test
+	@Test(priority=1,groups="Web")
 	public void LoginFreeCRM() {
 		String email_Id = datamap.get("Email_Id");
 		String uname = datamap.get("UserName");

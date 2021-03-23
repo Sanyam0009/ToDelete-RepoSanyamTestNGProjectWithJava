@@ -28,7 +28,7 @@ public class HomePage extends BrowserFactory{
 	
 	public ContactPage clickOnContactsButton(){
 		Actions action = new Actions(driver);
-		action.moveToElement(contacts).click().moveToElement(userLogged).build();
+		action.moveToElement(contacts).click().moveToElement(userLogged).build().perform();
 		//contacts.click();
 		return new ContactPage();
 	}
