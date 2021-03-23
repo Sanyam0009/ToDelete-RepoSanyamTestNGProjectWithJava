@@ -1,4 +1,4 @@
-package com.sanyam.testproject;
+package com.sanyam.uipackage;
 
 import org.openqa.selenium.support.PageFactory;
 
