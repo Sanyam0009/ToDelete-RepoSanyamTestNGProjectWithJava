@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,  1 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.TestDemo" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="LoginFreeCRM">LoginFreeCRM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -116,7 +121,7 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.TestDemo" hash-for-method="testSkip">testSkip</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="testSkip">testSkip</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -130,12 +135,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.TestDemo" hash-for-method="loginMercury">loginMercury</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.HomePageTest" hash-for-method="contactsButtonTest">contactsButtonTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.TestDemo" hash-for-method="testSuccess">testSuccess</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="testSuccess">testSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.HomePageTest" hash-for-method="veriftLoggedInUSerTest">veriftLoggedInUSerTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -153,48 +163,96 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.sanyam.testproject.TestDemo</span>
+              <span class="class-name">com.sanyam.testproject.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFreeCRM">
+                  </a> <!-- LoginFreeCRM -->
+                  <span class="method-name">LoginFreeCRM</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;email&apos;]&quot;}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SAKSHI&apos;, ip: &apos;192.168.0.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8185325e567a8231a6df0f463d8f505c
+*** Element info: {Using=xpath, value=//input[@name=&apos;email&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy29.sendKeys(Unknown Source)
+	at com.sanyam.uipackage.LoginPage.login(LoginPage.java:36)
+	at com.sanyam.testproject.LoginPageTest.LoginFreeCRM(LoginPageTest.java:43)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testCase2">
                   </a> <!-- testCase2 -->
                   <span class="method-name">testCase2</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_25_45_IST_2021.png,
+	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Thu_Mar_25_01_20_59_IST_2021.png,
 	Test Fail 3
-	at com.sanyam.testproject.TestDemo.testCase2(TestDemo.java:73)
+	at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:61)
 	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
-	at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:178)
-	at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
-	at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
-	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
-	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
-	at hudson.remoting.Request$2.run(Request.java:376)
-	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 41 stack frames
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -203,7 +261,7 @@
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.sanyam.testproject.TestDemo</span>
+              <span class="class-name">com.sanyam.testproject.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -212,37 +270,30 @@
                   </a> <!-- testSkip -->
                   <span class="method-name">testSkip</span>
                   <div class="stack-trace">org.testng.SkipException: Testig Skip test
-	at com.sanyam.testproject.TestDemo.testSkip(TestDemo.java:91)
+	at com.sanyam.testproject.LoginPageTest.testSkip(LoginPageTest.java:79)
 	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
-	at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:178)
-	at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
-	at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
-	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
-	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
-	at hudson.remoting.Request$2.run(Request.java:376)
-	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 40 stack frames
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -251,16 +302,31 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.sanyam.testproject.TestDemo</span>
+              <span class="class-name">com.sanyam.testproject.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginMercury">
-                  </a> <!-- loginMercury -->
-                  <span class="method-name">loginMercury</span>
+                  <a name="contactsButtonTest">
+                  </a> <!-- contactsButtonTest -->
+                  <span class="method-name">contactsButtonTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veriftLoggedInUSerTest">
+                  </a> <!-- veriftLoggedInUSerTest -->
+                  <span class="method-name">veriftLoggedInUSerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sanyam.testproject.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testSuccess">
@@ -285,7 +351,8 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.sanyam.testproject.TestDemo&quot;/&gt;
+      &lt;class name=&quot;com.sanyam.testproject.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.sanyam.testproject.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -299,7 +366,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -309,6 +376,14 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Web</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginFreeCRM</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -325,28 +400,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginMercury')
-data.setCell(0, 2, 'com.sanyam.testproject.TestDemo')
-data.setCell(0, 3, 11473);
+data.setCell(0, 1, 'LoginFreeCRM')
+data.setCell(0, 2, 'com.sanyam.testproject.LoginPageTest')
+data.setCell(0, 3, 62071);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCase2')
-data.setCell(1, 2, 'com.sanyam.testproject.TestDemo')
-data.setCell(1, 3, 1405);
+data.setCell(1, 1, 'contactsButtonTest')
+data.setCell(1, 2, 'com.sanyam.testproject.HomePageTest')
+data.setCell(1, 3, 6493);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSuccess')
-data.setCell(2, 2, 'com.sanyam.testproject.TestDemo')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'testCase2')
+data.setCell(2, 2, 'com.sanyam.testproject.LoginPageTest')
+data.setCell(2, 3, 2120);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSkip')
-data.setCell(3, 2, 'com.sanyam.testproject.TestDemo')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'veriftLoggedInUSerTest')
+data.setCell(3, 2, 'com.sanyam.testproject.HomePageTest')
+data.setCell(3, 3, 298);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSuccess')
+data.setCell(4, 2, 'com.sanyam.testproject.LoginPageTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSkip')
+data.setCell(5, 2, 'com.sanyam.testproject.LoginPageTest')
+data.setCell(5, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -372,37 +455,57 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sanyam.testproject.TestDemo</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initAll</span>
+              <div class="chronological-class-name">com.sanyam.testproject.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">openBrowserUrl</span>
-                <span class="method-start">1082 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">loginMercury</span>
-                <span class="method-start">34882 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCase2</span>
-                <span class="method-start">46413 ms</span>
+                <span class="method-start">51874 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSkip</span>
-                <span class="method-start">48256 ms</span>
+                <span class="method-start">54411 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSuccess</span>
-                <span class="method-start">48257 ms</span>
+                <span class="method-start">54412 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">aftertest</span>
-                <span class="method-start">48260 ms</span>
-              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sanyam.testproject.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">54414 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">contactsButtonTest</span>
+                <span class="method-start">95623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">veriftLoggedInUSerTest</span>
+                <span class="method-start">102117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">102416 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sanyam.testproject.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginFreeCRM</span>
+                <span class="method-start">102416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">164889 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

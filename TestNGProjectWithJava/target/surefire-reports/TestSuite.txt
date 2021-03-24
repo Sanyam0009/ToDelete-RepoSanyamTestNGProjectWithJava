@@ -1,11 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 56.109 sec <<< FAILURE! - in TestSuite
-testCase2(com.sanyam.testproject.TestDemo)  Time elapsed: 1.842 sec  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 181.61 sec <<< FAILURE! - in TestSuite
+testCase2(com.sanyam.testproject.LoginPageTest)  Time elapsed: 2.122 sec  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
-	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_25_45_IST_2021.png,
+	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Thu_Mar_25_01_20_59_IST_2021.png,
 	Test Fail 3
-	at com.sanyam.testproject.TestDemo.testCase2(TestDemo.java:73)
+	at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:61)
+
+LoginFreeCRM(com.sanyam.testproject.LoginPageTest)  Time elapsed: 62.071 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='email']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAKSHI', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8185325e567a8231a6df0f463d8f505c
+*** Element info: {Using=xpath, value=//input[@name='email']}
+	at com.sanyam.testproject.LoginPageTest.LoginFreeCRM(LoginPageTest.java:43)
 

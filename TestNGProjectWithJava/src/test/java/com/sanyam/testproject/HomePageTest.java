@@ -1,6 +1,5 @@
 package com.sanyam.testproject;
 
-import java.io.IOException;
 import java.util.HashMap;
 
 import org.testng.annotations.AfterClass;
@@ -41,6 +40,6 @@ public class HomePageTest extends BrowserFactory {
 	@AfterClass
 	public void teardown() {
 		System.out.println("Closing Browser");
-		//driver.quit();
+		driver.quit();
 	}
 }

@@ -1,7 +1,0 @@
-com\sanyam\uipackage\RegisterUser.class
-com\sanyam\uipackage\NumberCheck.class
-com\sanyam\frameworkpackage\BrowserFactory.class
-com\sanyam\frameworkpackage\TestListners.class
-com\sanyam\frameworkpackage\ReadExcelFile.class
-com\sanyam\uipackage\LoginPage.class
-com\sanyam\frameworkpackage\ExtentManager.class

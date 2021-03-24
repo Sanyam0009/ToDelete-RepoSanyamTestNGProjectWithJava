@@ -3,13 +3,9 @@ package com.sanyam.testproject;
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -18,7 +14,6 @@ import com.sanyam.frameworkpackage.ExtentManager;
 import com.sanyam.frameworkpackage.ReadExcelFile;
 import com.sanyam.frameworkpackage.TestListners;
 import com.sanyam.uipackage.LoginPage;
-import com.sanyam.uipackage.RegisterUser;
 
 public class LoginPageTest extends BrowserFactory {
 	// method>> Class >> test >> Suite

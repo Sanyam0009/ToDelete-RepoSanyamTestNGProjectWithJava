@@ -13,7 +13,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentManager {
-	private static ExtentReports extentReports;
+	public static ExtentReports extentReports;
 	
 
 	public static ExtentReports createInstance(){

@@ -23,7 +23,7 @@ public class BrowserFactory {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Properties property = new Properties();
+		property = new Properties();
 		try {
 			property.load(fis);
 		} catch (IOException e) {

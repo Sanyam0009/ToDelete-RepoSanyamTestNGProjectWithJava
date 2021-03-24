@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="4" passed="2">
+<testng-results skipped="1" failed="2" ignored="0" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="48261" started-at="2021-03-04T19:54:58Z" finished-at="2021-03-04T19:55:46Z">
+  <suite name="Suite" duration-ms="172114" started-at="2021-03-24T19:50:06Z" finished-at="2021-03-24T19:52:58Z">
     <groups>
+      <group name="Web">
+        <method signature="LoginPageTest.LoginFreeCRM()[pri:1, instance:com.sanyam.testproject.LoginPageTest@62573c86]" name="LoginFreeCRM" class="com.sanyam.testproject.LoginPageTest"/>
+      </group> <!-- Web -->
     </groups>
-    <test name="Test" duration-ms="48261" started-at="2021-03-04T19:54:58Z" finished-at="2021-03-04T19:55:46Z">
-      <class name="com.sanyam.testproject.TestDemo">
-        <test-method status="PASS" signature="initAll()[pri:0, instance:com.sanyam.testproject.TestDemo@9e7de00]" name="initAll" is-config="true" duration-ms="1082" started-at="2021-03-04T19:54:58Z" finished-at="2021-03-04T19:54:59Z">
+    <test name="Test" duration-ms="172114" started-at="2021-03-24T19:50:06Z" finished-at="2021-03-24T19:52:58Z">
+      <class name="com.sanyam.testproject.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sanyam.testproject.LoginPageTest@62573c86]" name="setUp" is-config="true" duration-ms="51820" started-at="2021-03-24T19:50:06Z" finished-at="2021-03-24T19:50:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initAll -->
-        <test-method status="PASS" signature="openBrowserUrl()[pri:0, instance:com.sanyam.testproject.TestDemo@9e7de00]" name="openBrowserUrl" is-config="true" duration-ms="33778" started-at="2021-03-04T19:54:59Z" finished-at="2021-03-04T19:55:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowserUrl -->
-        <test-method status="PASS" signature="loginMercury()[pri:0, instance:com.sanyam.testproject.TestDemo@9e7de00]" name="loginMercury" duration-ms="11473" started-at="2021-03-04T19:55:33Z" finished-at="2021-03-04T19:55:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginMercury -->
-        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.TestDemo@9e7de00]" name="testCase2" duration-ms="1405" started-at="2021-03-04T19:55:45Z" finished-at="2021-03-04T19:55:46Z">
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.LoginPageTest@62573c86]" name="testCase2" duration-ms="2120" started-at="2021-03-24T19:50:58Z" finished-at="2021-03-24T19:51:00Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_25_45_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Thu_Mar_25_01_20_59_IST_2021.png,
 Test Fail 3]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Fri_Mar_05_01_25_45_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Thu_Mar_25_01_20_59_IST_2021.png,
 Test Fail 3
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at com.sanyam.testproject.TestDemo.testCase2(TestDemo.java:73)
+at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:61)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -68,53 +63,42 @@ at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess
 at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
 at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
 at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
-at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
 at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
-at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:178)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
-at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
-at hudson.remoting.UserRequest.perform(UserRequest.java:211)
-at hudson.remoting.UserRequest.perform(UserRequest.java:54)
-at hudson.remoting.Request$2.run(Request.java:376)
-at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.TestDemo@9e7de00]" name="testSkip" duration-ms="0" started-at="2021-03-04T19:55:46Z" finished-at="2021-03-04T19:55:46Z">
+        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.LoginPageTest@62573c86]" name="testSkip" duration-ms="0" started-at="2021-03-24T19:51:00Z" finished-at="2021-03-24T19:51:00Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Testig Skip test]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Testig Skip test
-at com.sanyam.testproject.TestDemo.testSkip(TestDemo.java:91)
+at com.sanyam.testproject.LoginPageTest.testSkip(LoginPageTest.java:79)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,54 +135,167 @@ at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess
 at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
 at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
 at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
-at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
-at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
 at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
-at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
-at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:178)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
-at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
-at hudson.remoting.UserRequest.perform(UserRequest.java:211)
-at hudson.remoting.UserRequest.perform(UserRequest.java:54)
-at hudson.remoting.Request$2.run(Request.java:376)
-at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSkip -->
-        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.TestDemo@9e7de00]" name="testSuccess" duration-ms="0" started-at="2021-03-04T19:55:46Z" finished-at="2021-03-04T19:55:46Z">
+        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.LoginPageTest@62573c86]" name="testSuccess" duration-ms="0" started-at="2021-03-24T19:51:00Z" finished-at="2021-03-24T19:51:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccess -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:com.sanyam.testproject.TestDemo@9e7de00]" name="aftertest" is-config="true" duration-ms="0" started-at="2021-03-04T19:55:46Z" finished-at="2021-03-04T19:55:46Z">
+        <test-method status="FAIL" signature="LoginFreeCRM()[pri:1, instance:com.sanyam.testproject.LoginPageTest@62573c86]" name="LoginFreeCRM" duration-ms="62071" started-at="2021-03-24T19:51:48Z" finished-at="2021-03-24T19:52:50Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='email']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAKSHI', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8185325e567a8231a6df0f463d8f505c
+*** Element info: {Using=xpath, value=//input[@name='email']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='email']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAKSHI', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8185325e567a8231a6df0f463d8f505c
+*** Element info: {Using=xpath, value=//input[@name='email']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy29.sendKeys(Unknown Source)
+at com.sanyam.uipackage.LoginPage.login(LoginPage.java:36)
+at com.sanyam.testproject.LoginPageTest.LoginFreeCRM(LoginPageTest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:202)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:155)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:81)
+at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1010)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:862)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:755)
+at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aftertest -->
-      </class> <!-- com.sanyam.testproject.TestDemo -->
+        </test-method> <!-- LoginFreeCRM -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.LoginPageTest@62573c86]" name="teardown" is-config="true" duration-ms="7190" started-at="2021-03-24T19:52:51Z" finished-at="2021-03-24T19:52:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.sanyam.testproject.LoginPageTest -->
+      <class name="com.sanyam.testproject.HomePageTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sanyam.testproject.HomePageTest@2418ba04]" name="Setup" is-config="true" duration-ms="41208" started-at="2021-03-24T19:51:00Z" finished-at="2021-03-24T19:51:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="contactsButtonTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@2418ba04]" name="contactsButtonTest" duration-ms="6493" started-at="2021-03-24T19:51:41Z" finished-at="2021-03-24T19:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactsButtonTest -->
+        <test-method status="PASS" signature="veriftLoggedInUSerTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@2418ba04]" name="veriftLoggedInUSerTest" duration-ms="298" started-at="2021-03-24T19:51:48Z" finished-at="2021-03-24T19:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriftLoggedInUSerTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.HomePageTest@2418ba04]" name="teardown" is-config="true" duration-ms="0" started-at="2021-03-24T19:51:48Z" finished-at="2021-03-24T19:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.sanyam.testproject.HomePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

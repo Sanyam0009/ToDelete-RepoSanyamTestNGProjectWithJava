@@ -9,6 +9,7 @@
       <class name="com.sanyam.testproject.LoginPageTest">
         <methods>
           <include name="testSkip"/>
+          <include name="LoginFreeCRM"/>
           <include name="setUp"/>
           <include name="testCase2"/>
           <include name="teardown"/>

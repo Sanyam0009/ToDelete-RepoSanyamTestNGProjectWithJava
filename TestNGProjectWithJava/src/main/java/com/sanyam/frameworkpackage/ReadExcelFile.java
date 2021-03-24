@@ -12,10 +12,11 @@ public class ReadExcelFile {
 static HSSFWorkbook workbook;
 static HSSFSheet worksheet;
 static HSSFRow rowObj;
+static HashMap<String, String> testData = null;
 
 
 	public static HashMap<String,String> testDataCollector(String TestdataIdentifier){
-		HashMap<String, String> testData = null;
+		
 		try {
 			System.out.println("In READEXCELFILE");
 			String excelpath = System.getProperty("user.dir") + "\\TestData\\TestData.xls";

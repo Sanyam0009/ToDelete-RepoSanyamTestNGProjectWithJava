@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="6" passed="4">
+<testng-results skipped="1" failed="2" ignored="0" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27912" started-at="2021-03-21T19:31:43Z" finished-at="2021-03-21T19:32:11Z">
+  <suite name="Suite" duration-ms="187164" started-at="2021-03-23T06:59:39Z" finished-at="2021-03-23T07:02:46Z">
     <groups>
+      <group name="Web">
+        <method signature="LoginPageTest.LoginFreeCRM()[pri:1, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="LoginFreeCRM" class="com.sanyam.testproject.LoginPageTest"/>
+      </group> <!-- Web -->
     </groups>
-    <test name="Test" duration-ms="27912" started-at="2021-03-21T19:31:43Z" finished-at="2021-03-21T19:32:11Z">
+    <test name="Test" duration-ms="187164" started-at="2021-03-23T06:59:39Z" finished-at="2021-03-23T07:02:46Z">
       <class name="com.sanyam.testproject.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="setUp" is-config="true" duration-ms="11433" started-at="2021-03-21T19:31:43Z" finished-at="2021-03-21T19:31:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="setUp" is-config="true" duration-ms="56121" started-at="2021-03-23T06:59:39Z" finished-at="2021-03-23T07:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginFreeCRM()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="LoginFreeCRM" duration-ms="636" started-at="2021-03-21T19:31:55Z" finished-at="2021-03-21T19:31:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFreeCRM -->
-        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testCase2" duration-ms="1052" started-at="2021-03-21T19:31:55Z" finished-at="2021-03-21T19:31:56Z">
+        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testCase2" duration-ms="1786" started-at="2021-03-23T07:00:35Z" finished-at="2021-03-23T07:00:37Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Mon_Mar_22_01_01_56_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Tue_Mar_23_12_30_36_IST_2021.png,
 Test Fail 3]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Mon_Mar_22_01_01_56_IST_2021.png,
+Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Tue_Mar_23_12_30_36_IST_2021.png,
 Test Fail 3
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:66)
+at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:61)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,14 +58,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSkip" duration-ms="2" started-at="2021-03-21T19:31:57Z" finished-at="2021-03-21T19:31:57Z">
+        <test-method status="SKIP" signature="testSkip()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSkip" duration-ms="2" started-at="2021-03-23T07:00:37Z" finished-at="2021-03-23T07:00:37Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Testig Skip test]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Testig Skip test
-at com.sanyam.testproject.LoginPageTest.testSkip(LoginPageTest.java:84)
+at com.sanyam.testproject.LoginPageTest.testSkip(LoginPageTest.java:79)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,29 +97,102 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSkip -->
-        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSuccess" duration-ms="2" started-at="2021-03-21T19:31:57Z" finished-at="2021-03-21T19:31:57Z">
+        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="testSuccess" duration-ms="2" started-at="2021-03-23T07:00:37Z" finished-at="2021-03-23T07:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccess -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="teardown" is-config="true" duration-ms="1810" started-at="2021-03-21T19:31:57Z" finished-at="2021-03-21T19:31:59Z">
+        <test-method status="FAIL" signature="LoginFreeCRM()[pri:1, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="LoginFreeCRM" duration-ms="61539" started-at="2021-03-23T07:01:41Z" finished-at="2021-03-23T07:02:43Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='email']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAKSHI', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6ecaf3e1364d0c637bf18d5765ecb81
+*** Element info: {Using=xpath, value=//input[@name='email']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='email']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAKSHI', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6ecaf3e1364d0c637bf18d5765ecb81
+*** Element info: {Using=xpath, value=//input[@name='email']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+at com.sanyam.uipackage.LoginPage.login(LoginPage.java:36)
+at com.sanyam.testproject.LoginPageTest.LoginFreeCRM(LoginPageTest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFreeCRM -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.LoginPageTest@545997b1]" name="teardown" is-config="true" duration-ms="2421" started-at="2021-03-23T07:02:43Z" finished-at="2021-03-23T07:02:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.sanyam.testproject.LoginPageTest -->
       <class name="com.sanyam.testproject.HomePageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="Setup" is-config="true" duration-ms="10778" started-at="2021-03-21T19:31:59Z" finished-at="2021-03-21T19:32:10Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="Setup" is-config="true" duration-ms="54543" started-at="2021-03-23T07:00:37Z" finished-at="2021-03-23T07:01:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="contactsButtonTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="contactsButtonTest" duration-ms="1284" started-at="2021-03-21T19:32:10Z" finished-at="2021-03-21T19:32:11Z">
+        <test-method status="PASS" signature="contactsButtonTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="contactsButtonTest" duration-ms="9198" started-at="2021-03-23T07:01:32Z" finished-at="2021-03-23T07:01:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactsButtonTest -->
-        <test-method status="PASS" signature="veriftLoggedInUSerTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="veriftLoggedInUSerTest" duration-ms="82" started-at="2021-03-21T19:32:11Z" finished-at="2021-03-21T19:32:11Z">
+        <test-method status="PASS" signature="veriftLoggedInUSerTest()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="veriftLoggedInUSerTest" duration-ms="265" started-at="2021-03-23T07:01:41Z" finished-at="2021-03-23T07:01:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- veriftLoggedInUSerTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="teardown" is-config="true" duration-ms="1" started-at="2021-03-21T19:32:11Z" finished-at="2021-03-21T19:32:11Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sanyam.testproject.HomePageTest@4cf4d528]" name="teardown" is-config="true" duration-ms="0" started-at="2021-03-23T07:01:41Z" finished-at="2021-03-23T07:01:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
