@@ -34,7 +34,7 @@
         <configuration>
           <forkCount>0</forkCount>
           <suiteXmlFiles>
-            <suiteXmlFile>testng1.xml</suiteXmlFile> <!-- If it is testng.xml is inside folded then mention folder also inside  -->
+            <suiteXmlFile>testng2.xml</suiteXmlFile> <!-- If it is testng.xml is inside folded then mention folder also inside  -->
           </suiteXmlFiles>
         </configuration>
       </plugin>
