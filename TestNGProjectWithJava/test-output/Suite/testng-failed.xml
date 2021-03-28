@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <listeners>
     <listener class-name="com.sanyam.frameworkpackage.TestListners"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Test1(failed)" parallel="tests">
     <classes>
       <class name="com.sanyam.testproject.LoginPageTest">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- com.sanyam.testproject.LoginPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

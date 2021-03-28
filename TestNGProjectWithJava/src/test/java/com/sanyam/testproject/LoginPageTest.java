@@ -24,72 +24,71 @@ public class LoginPageTest {
 	// method>> Class >> test >> Suite
 	public HashMap<String, String> datamap;
 	public WebDriver driver;
-	
-	@BeforeTest
+
+	@BeforeClass
 	public void setUp(ITestContext context) throws IOException {
 		// ReadExcelFile excelFactory = new ReadExcelFile(); // made the method
 		// "testDataCollector" static so no need to create an obj as can be
 		// accessed by class name
 		BrowserFactory bf = new BrowserFactory();
 		driver = bf.getDriver();
-		System.out.println(this.getClass().getSimpleName());
 		context.setAttribute(this.getClass().getSimpleName(), driver);
-		datamap =  ReadExcelFile.testDataCollector("TC_01");
-		
+		datamap = ReadExcelFile.testDataCollector("TC_01");
+
 	}
 
-
-	@Test(priority=0)
-	public void LoginFreeCRM() {
+	@Test(priority = 0)
+	public void loginFreeCRM() {
+		System.out.println("Inside loginFreeCRM Test");
 		String email_Id = datamap.get("Email_Id");
 		String uname = datamap.get("UserName");
 		String Pwd = datamap.get("Password");
-
-		System.out.println("Excel data" + uname + " " + Pwd + " " + email_Id);
-		System.out.println("Register and Login");
-		//RegisterUser RegisterUserObj = PageFactory.initElements(driver, RegisterUser.class//(POM class name));
-		//or
+		// RegisterUser RegisterUserObj = PageFactory.initElements(driver,
+		// RegisterUser.class//(POM class name));
+		// or
 		// RegisterUser RegisterUserObj = new RegisterUser(driver); // In this
-		// case we will have to keep PageFactory.initElement(driver, this); in constructor
+		// case we will have to keep PageFactory.initElement(driver, this); in
+		// constructor
 		LoginPage LoginPageObject = new LoginPage(driver);
 		LoginPageObject.login(uname, Pwd);
 	}
 
-	@Test(priority=1)
+	@Test(priority = 1)
 	public void testSuccess() {
-
-		System.out.println("Inside Pass Report");
+		System.out.println("Inside testSuccess Test");
 	}
-	 
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void testCase2() {
+		System.out.println("Inside testCase2");
 		SoftAssert softAssert = new SoftAssert();
-		System.out.println("Inside TC 2");
-		TestListners.customOnTestFailure(driver,"System should display Sanyam","System is Displaying Sakshi","Test to take custome SC");
+		TestListners.customOnTestFailure(driver, "System should display Sanyam", "System is Displaying Sakshi",
+				"Test to take custome SC");
 		String path2 = ExtentManager.getScreenshot(driver, "Fail2");
-		softAssert.fail("Test Fail 1"  + "-" + path2); // path2 Just to check if we can pass path or not
-		
-		softAssert.fail("Test Fail 2" );
+		softAssert.fail("Test Fail 1" + "-" + path2); // path2 Just to check if
+														// we can pass path or
+														// not
+
+		softAssert.fail("Test Fail 2");
 		softAssert.assertAll();
 	}
 
-	@Test(priority=3)
+	@Test(priority = 3)
 	public void testCase3() {
-		System.out.println("Test1" + driver.getTitle());
+		System.out.println("Inside testCase3 Test");
 		Assert.fail("Failed to check Failure Scenario");
-		System.out.println("Test2" + driver.getTitle());
 	}
 
-	@Test(priority=4)
+	@Test(priority = 4)
 	public void testSkip() {
-		System.out.println("Inside Skip Report");
+		System.out.println("Inside testSkip Test");
 		throw new SkipException("Testig Skip test");
 	}
 
-	@AfterTest
+	@AfterClass
 	public void teardown() {
-		System.out.println("Closing Browser");
-		driver.close();
+		System.out.println("Closing Browser for Login Test");
+		driver.quit();
 	}
 
 }

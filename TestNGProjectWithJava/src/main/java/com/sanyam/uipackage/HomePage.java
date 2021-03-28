@@ -7,9 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.sanyam.frameworkpackage.BrowserFactory;
-import com.sanyam.testproject.HelperClass;
-
 public class HomePage{
 	private WebDriver driver;
 	public HomePage(WebDriver driver){
@@ -24,7 +21,6 @@ public class HomePage{
 	WebElement contacts;
 	
 	public void userLoggedIn(){
-		System.out.println("In HomePageTest");
 		Assert.assertEquals(userLogged.getText(), "Sanyam Choudhary","User was not able to login successfully");
 	}
 	

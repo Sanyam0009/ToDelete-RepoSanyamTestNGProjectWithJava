@@ -46,7 +46,6 @@ public class TestListners implements ITestListener {
 		extentTestTL.get().fail("<details><summary><b><font color=red> Excetion occered, Click to see details"
 				+ "</font></b></summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details> \n");
 		ITestContext context = result.getTestContext();
-		System.out.println("Simple Class Name - "+ result.getTestClass().getRealClass().getSimpleName());
 		WebDriver driver = (WebDriver)context.getAttribute(result.getTestClass().getRealClass().getSimpleName());
 		String path = ExtentManager.getScreenshot(driver, methodName);
 		String description = result.getThrowable().getMessage();

@@ -6,16 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sanyam.frameworkpackage.BrowserFactory;
-import com.sanyam.testproject.HelperClass;
-
 public class LoginPage{
 	private WebDriver driver;
 	public LoginPage(WebDriver driver){
-		System.out.println("In Login class const before PF");
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		System.out.println("In Login class const After PF");
 	}
 
 	
@@ -30,7 +25,6 @@ public class LoginPage{
 	
 	
 	public HomePage login(String uname,String Password){
-		System.out.println("In Login Method of LoginPage class");
 		userName.sendKeys(uname);
 		password.sendKeys(Password);
 		login.click();

@@ -35,7 +35,6 @@ public class BrowserFactory {
 		int ImplicitilyWait = Integer.parseInt(property.getProperty("ImplicitilyWait"));
 		int PageLoadTimeOut = Integer.parseInt(property.getProperty("PageLoadTimeout"));
 		if (browserName1.equalsIgnoreCase("chrome")) {
-			System.out.println("Opening Chrome Browser");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
@@ -43,7 +42,6 @@ public class BrowserFactory {
 			driver.manage().timeouts().pageLoadTimeout(PageLoadTimeOut, TimeUnit.SECONDS);
 			driver.get(URL);
 		} else if (browserName1.toLowerCase().equals("firefox")) {
-			System.out.println("Opening firefox Browser");
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();

@@ -33,19 +33,21 @@ public class HomePageTest{
 		// homePage = new HomePage();
 	}
 
-	@Test(priority=1)
+	@Test(priority=0)
 	public void veriftLoggedInUSerTest() {
+		System.out.println("Inside veriftLoggedInUSerTest Test");
 		homePage.userLoggedIn();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=1)
 	public void contactsButtonTest(){
+		System.out.println("Inside contactsButtonTest Test");
 		homePage.clickOnContactsButton();
 	}
 
 	@AfterClass
 	public void teardown() {
-		System.out.println("Closing Browser");
-		driver.close();
+		System.out.println("Closing Browser for HomePageTest");
+		driver.quit();
 	}
 }

@@ -1,4 +1,4 @@
-package com.sanyam.testproject;
+/*package com.sanyam.testproject;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -27,3 +27,4 @@ public class HelperClass {
 		
 	}
 }
+*/

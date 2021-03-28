@@ -18,7 +18,6 @@ static HashMap<String, String> testData = null;
 	public static HashMap<String,String> testDataCollector(String TestdataIdentifier){
 		
 		try {
-			System.out.println("In READEXCELFILE");
 			String excelpath = System.getProperty("user.dir") + "\\TestData\\TestData.xls";
 			File src = new File(excelpath);
 			FileInputStream fis = new FileInputStream(src);
@@ -42,7 +41,6 @@ static HashMap<String, String> testData = null;
 			for(int j=0;j<lastColumnNumber;j++){
 			String key1 = worksheet.getRow(0).getCell(j).getStringCellValue();
 			String value1 = worksheet.getRow(testCaseRow).getCell(j).getStringCellValue();
-			System.out.println(key1 + "-" + value1);
 			testData.put(key1, value1);
 			}
 		} catch (Exception e) {
