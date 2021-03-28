@@ -11,11 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactory {
-	public static WebDriver driver;
+	public WebDriver driver;
 	private static Properties property;
 	private static FileInputStream fis;
 
-	public static WebDriver getDriver() {
+	public WebDriver getDriver() {
 
 		try {
 			fis = new FileInputStream(System.getProperty("user.dir") + "/TestData/EnvironmentVariables.property");

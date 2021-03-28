@@ -1,5 +1,6 @@
 package com.sanyam.frameworkpackage;
 
+import java.lang.reflect.Field;
 import java.util.Arrays;
 
 import org.openqa.selenium.WebDriver;
@@ -17,7 +18,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.sanyam.frameworkpackage.ExtentManager;
 
 
-public class TestListners extends BrowserFactory implements ITestListener {
+public class TestListners implements ITestListener {
 	
 	private static ExtentReports extentReports = ExtentManager.createInstance();
 	private static ThreadLocal<ExtentTest> extentTestTL = new ThreadLocal<ExtentTest>();
@@ -25,7 +26,7 @@ public class TestListners extends BrowserFactory implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		ExtentTest extentTest = extentReports
-				.createTest(result.getTestClass().getName() + "  ::  " + result.getMethod().getMethodName());
+				.createTest(result.getTestClass().getRealClass().getSimpleName() + "  ::  " + result.getMethod().getMethodName());
 		extentTestTL.set(extentTest);
 	}
 
@@ -44,7 +45,9 @@ public class TestListners extends BrowserFactory implements ITestListener {
 		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
 		extentTestTL.get().fail("<details><summary><b><font color=red> Excetion occered, Click to see details"
 				+ "</font></b></summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details> \n");
-		//WebDriver driver = ((LoginPageTest) result.getInstance()).driver;
+		ITestContext context = result.getTestContext();
+		System.out.println("Simple Class Name - "+ result.getTestClass().getRealClass().getSimpleName());
+		WebDriver driver = (WebDriver)context.getAttribute(result.getTestClass().getRealClass().getSimpleName());
 		String path = ExtentManager.getScreenshot(driver, methodName);
 		String description = result.getThrowable().getMessage();
 		String logText = "<b> Test Method  - " + methodName + " --- " + description + " - Failed</b>";

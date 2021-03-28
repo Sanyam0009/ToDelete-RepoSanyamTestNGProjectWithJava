@@ -4,12 +4,12 @@
   <listeners>
     <listener class-name="com.sanyam.frameworkpackage.TestListners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test name="Test(failed)">
     <classes>
       <class name="com.sanyam.testproject.LoginPageTest">
         <methods>
+          <include name="testCase3"/>
           <include name="testSkip"/>
-          <include name="LoginFreeCRM"/>
           <include name="setUp"/>
           <include name="testCase2"/>
           <include name="teardown"/>

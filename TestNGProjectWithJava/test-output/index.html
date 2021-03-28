@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,  1 skipped,  3 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,  1 skipped,  4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="LoginFreeCRM">LoginFreeCRM</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="testCase3">testCase3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -133,6 +133,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.LoginPageTest" hash-for-method="LoginFreeCRM">LoginFreeCRM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sanyam.testproject.HomePageTest" hash-for-method="contactsButtonTest">contactsButtonTest</a> <!-- method navigator-link -->
@@ -168,46 +173,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginFreeCRM">
-                  </a> <!-- LoginFreeCRM -->
-                  <span class="method-name">LoginFreeCRM</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;email&apos;]&quot;}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SAKSHI&apos;, ip: &apos;192.168.0.113&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\$akshi\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f6ecaf3e1364d0c637bf18d5765ecb81
-*** Element info: {Using=xpath, value=//input[@name=&apos;email&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at com.sanyam.uipackage.LoginPage.login(LoginPage.java:36)
-	at com.sanyam.testproject.LoginPageTest.LoginFreeCRM(LoginPageTest.java:43)
-... Removed 29 stack frames
+                  <a name="testCase2">
+                  </a> <!-- testCase2 -->
+                  <span class="method-name">testCase2</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Test Fail 1-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Sun_Mar_28_06_52_07_IST_2021.png,
+	Test Fail 2
+	at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:73)
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase2">
-                  </a> <!-- testCase2 -->
-                  <span class="method-name">testCase2</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Test Fail 2-C:\Java_Selenium_Items\My_Workspace\Repo_TestNGProjectWithJava\TestNGProjectWithJava\ScreenShot\Fail2_Tue_Mar_23_12_30_36_IST_2021.png,
-	Test Fail 3
-	at com.sanyam.testproject.LoginPageTest.testCase2(LoginPageTest.java:61)
+                  <a name="testCase3">
+                  </a> <!-- testCase3 -->
+                  <span class="method-name">testCase3</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to check Failure Scenario
+	at com.sanyam.testproject.LoginPageTest.testCase3(LoginPageTest.java:79)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -226,7 +209,7 @@ Session ID: f6ecaf3e1364d0c637bf18d5765ecb81
                   </a> <!-- testSkip -->
                   <span class="method-name">testSkip</span>
                   <div class="stack-trace">org.testng.SkipException: Testig Skip test
-	at com.sanyam.testproject.LoginPageTest.testSkip(LoginPageTest.java:79)
+	at com.sanyam.testproject.LoginPageTest.testSkip(LoginPageTest.java:86)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -263,6 +246,13 @@ Session ID: f6ecaf3e1364d0c637bf18d5765ecb81
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="LoginFreeCRM">
+                  </a> <!-- LoginFreeCRM -->
+                  <span class="method-name">LoginFreeCRM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testSuccess">
                   </a> <!-- testSuccess -->
                   <span class="method-name">testSuccess</span>
@@ -283,7 +273,7 @@ Session ID: f6ecaf3e1364d0c637bf18d5765ecb81
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.sanyam.frameworkpackage.TestListners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.sanyam.testproject.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;com.sanyam.testproject.HomePageTest&quot;/&gt;
@@ -310,14 +300,6 @@ Session ID: f6ecaf3e1364d0c637bf18d5765ecb81
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Web</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">LoginFreeCRM</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -334,36 +316,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginFreeCRM')
+data.setCell(0, 1, 'testCase2')
 data.setCell(0, 2, 'com.sanyam.testproject.LoginPageTest')
-data.setCell(0, 3, 61539);
+data.setCell(0, 3, 2099);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'contactsButtonTest')
-data.setCell(1, 2, 'com.sanyam.testproject.HomePageTest')
-data.setCell(1, 3, 9198);
+data.setCell(1, 1, 'LoginFreeCRM')
+data.setCell(1, 2, 'com.sanyam.testproject.LoginPageTest')
+data.setCell(1, 3, 2080);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCase2')
-data.setCell(2, 2, 'com.sanyam.testproject.LoginPageTest')
-data.setCell(2, 3, 1786);
+data.setCell(2, 1, 'veriftLoggedInUSerTest')
+data.setCell(2, 2, 'com.sanyam.testproject.HomePageTest')
+data.setCell(2, 3, 1202);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'veriftLoggedInUSerTest')
+data.setCell(3, 1, 'contactsButtonTest')
 data.setCell(3, 2, 'com.sanyam.testproject.HomePageTest')
-data.setCell(3, 3, 265);
+data.setCell(3, 3, 478);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSuccess')
+data.setCell(4, 1, 'testCase3')
 data.setCell(4, 2, 'com.sanyam.testproject.LoginPageTest')
-data.setCell(4, 3, 2);
+data.setCell(4, 3, 10);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testSkip')
+data.setCell(5, 1, 'testSuccess')
 data.setCell(5, 2, 'com.sanyam.testproject.LoginPageTest')
-data.setCell(5, 3, 2);
+data.setCell(5, 3, 3);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSkip')
+data.setCell(6, 2, 'com.sanyam.testproject.LoginPageTest')
+data.setCell(6, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -390,42 +376,48 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.sanyam.testproject.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
+              <div class="configuration-test before">
+                <span class="method-name">setUp(org.testng.TestRunner@4efcf8a)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testCase2</span>
-                <span class="method-start">56153 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testSkip</span>
-                <span class="method-start">58407 ms</span>
+                <span class="method-name">LoginFreeCRM</span>
+                <span class="method-start">26708 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSuccess</span>
-                <span class="method-start">58418 ms</span>
+                <span class="method-start">28810 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sanyam.testproject.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">58424 ms</span>
+                <span class="method-name">Setup(org.testng.TestRunner@4efcf8a)</span>
+                <span class="method-start">28815 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">contactsButtonTest</span>
-                <span class="method-start">112968 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">veriftLoggedInUSerTest</span>
-                <span class="method-start">122175 ms</span>
+                <span class="method-start">48780 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sanyam.testproject.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase2</span>
+                <span class="method-start">49988 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sanyam.testproject.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">contactsButtonTest</span>
+                <span class="method-start">52701 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">122443 ms</span>
+                <span class="method-start">53183 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -433,13 +425,17 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">LoginFreeCRM</span>
-                <span class="method-start">122445 ms</span>
+                <span class="method-name">testCase3</span>
+                <span class="method-start">53850 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="test-method">
+                <span class="method-name">testSkip</span>
+                <span class="method-start">54297 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">184670 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">54304 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

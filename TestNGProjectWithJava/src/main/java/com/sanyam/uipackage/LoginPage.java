@@ -1,31 +1,31 @@
 package com.sanyam.uipackage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sanyam.frameworkpackage.BrowserFactory;
+import com.sanyam.testproject.HelperClass;
 
-public class LoginPage extends BrowserFactory{
-	public LoginPage(){
+public class LoginPage{
+	private WebDriver driver;
+	public LoginPage(WebDriver driver){
 		System.out.println("In Login class const before PF");
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		System.out.println("In Login class const After PF");
 	}
 
 	
 	@FindBy(how=How.XPATH, using="//input[@name='email']")
-	@CacheLookup
 	WebElement userName;
 	
 	@FindBy(xpath="//input[@name='password']")
-	@CacheLookup
 	WebElement password;
 	
 	@FindBy(how=How.XPATH , using="//div[text()='Login']")
-	@CacheLookup
 	WebElement login;
 	
 	
@@ -34,7 +34,7 @@ public class LoginPage extends BrowserFactory{
 		userName.sendKeys(uname);
 		password.sendKeys(Password);
 		login.click();
-		return new HomePage();
+		return new HomePage(driver);
 	}
 	
 }

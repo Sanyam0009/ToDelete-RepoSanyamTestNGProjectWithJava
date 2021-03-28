@@ -2,8 +2,12 @@ package com.sanyam.testproject;
 
 import java.util.HashMap;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.sanyam.frameworkpackage.BrowserFactory;
@@ -11,15 +15,17 @@ import com.sanyam.frameworkpackage.ReadExcelFile;
 import com.sanyam.uipackage.HomePage;
 import com.sanyam.uipackage.LoginPage;
 
-public class HomePageTest extends BrowserFactory {
+public class HomePageTest{
 	HashMap<String, String> datamap;
+	public WebDriver driver;
 	HomePage homePage;
-
 	@BeforeClass
-	public void Setup() {
-		getDriver();
+	public void Setup(ITestContext context) {
+		BrowserFactory bf = new BrowserFactory();
+		driver = bf.getDriver();
+		context.setAttribute(this.getClass().getSimpleName(), driver);
 		datamap = ReadExcelFile.testDataCollector("TC_01");
-		LoginPage loginPage = new LoginPage();
+		LoginPage loginPage = new LoginPage(driver);
 		homePage = loginPage.login(datamap.get("UserName"), datamap.get("Password"));
 /*		or if we do not want to close previous browser by login page and not want to login
 		again here then we can directly go for home page object like below line and then line
@@ -27,12 +33,12 @@ public class HomePageTest extends BrowserFactory {
 		// homePage = new HomePage();
 	}
 
-	@Test
+	@Test(priority=1)
 	public void veriftLoggedInUSerTest() {
 		homePage.userLoggedIn();
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void contactsButtonTest(){
 		homePage.clickOnContactsButton();
 	}
@@ -40,6 +46,6 @@ public class HomePageTest extends BrowserFactory {
 	@AfterClass
 	public void teardown() {
 		System.out.println("Closing Browser");
-		driver.quit();
+		driver.close();
 	}
 }

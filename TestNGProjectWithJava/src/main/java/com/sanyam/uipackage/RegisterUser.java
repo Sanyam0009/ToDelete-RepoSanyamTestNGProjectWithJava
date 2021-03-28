@@ -1,4 +1,4 @@
-package com.sanyam.uipackage;
+/*package com.sanyam.uipackage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -30,8 +30,9 @@ public class RegisterUser {
 		SignIN.click();
 		email.sendKeys(emailId);
 		CreatAccount.click();
-		return new LoginPage(); //Login page is lending page
+		return new LoginPage(driver); //Login page is lending page
 	}
 	
 
 }
+*/

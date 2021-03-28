@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.sanyam.testproject.LoginPageTest">
         <methods>
-          <include name="aftertest"/>
+          <include name="testCase3"/>
           <include name="testSkip"/>
-          <include name="LoginFreeCRM"/>
           <include name="setUp"/>
           <include name="testCase2"/>
-          <include name="testSuccess"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.sanyam.testproject.LoginPageTest -->
     </classes>
