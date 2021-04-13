@@ -3,6 +3,7 @@
 <suite name="Suite">
 	 <listeners>
 		<listener class-name="com.sanyam.frameworkpackage.TestListners"></listener>
+		<listener class-name="com.sanyam.retrylogic.TransformerRetry"></listener>
 	</listeners>
   <test name="Test" >
     <classes><!-- if there are 2 classes in testng.xml then testng will consider them as a single test>

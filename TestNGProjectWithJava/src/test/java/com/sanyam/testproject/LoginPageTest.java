@@ -18,6 +18,7 @@ import com.sanyam.frameworkpackage.BrowserFactory;
 import com.sanyam.frameworkpackage.ExtentManager;
 import com.sanyam.frameworkpackage.ReadExcelFile;
 import com.sanyam.frameworkpackage.TestListners;
+import com.sanyam.retrylogic.RetryAnalyzerC;
 import com.sanyam.uipackage.LoginPage;
 
 public class LoginPageTest {
@@ -73,9 +74,9 @@ public class LoginPageTest {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3)//, retryAnalyzer = RetryAnalyzerC.class ) // required if we want to implement retry logic for a particular test methods
 	public void testCase3() {
-		System.out.println("Inside testCase3 Test");
+		System.out.println("Inside testCase3");
 		Assert.fail("Failed to check Failure Scenario");
 	}
 

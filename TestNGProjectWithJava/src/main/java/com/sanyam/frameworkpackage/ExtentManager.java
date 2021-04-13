@@ -20,6 +20,7 @@ public class ExtentManager {
 	//	String dateRepott = new SimpleDateFormat("yyyyddmmhhmmss").format(new Date());
 		Date d = new Date();
 		String fileName = "extentReport_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+		System.out.println("Extent - Report - Path = " + System.getProperty("user.dir") );
 		String directory = System.getProperty("user.dir") + "/Reports/";
 		new File(directory).mkdir();
 		String reportDirectory = directory + fileName;
