@@ -10,6 +10,10 @@
           <include name="setUp"/>
           <include name="testCase2"/>
           <include name="teardown"/>
+          <include name="loginFreeCRM"/>
+          <include name="testSuccess"/>
+          <include name="Z"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.sanyam.testproject.LoginPageTest -->
     </classes>
